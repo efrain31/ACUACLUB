@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
         {/* Logo */}
         <a href="#inicio" className="header__logo">
           <span className="logo__text">
-            Sport<span className="logo__accent">Club</span>
+            Acua<span className="logo__accent">Club</span>
           </span>
           <span className="logo__subtitle">AcuaClub</span>
         </a>

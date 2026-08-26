@@ -11,7 +11,7 @@ function App() {
         <section className="hero" id="inicio">
           <div className="container">
             <h2 className="h2-sub">
-              <span className="fil">SportClub</span>
+              <span className="fil">AcuaClub</span>
             </h2>
             <h1 className="head">Work kout</h1>
             <div className="he-des">
