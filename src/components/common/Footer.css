@@ -1,0 +1,259 @@
+/* Footer Component - Modern & Professional Design */
+
+.footer {
+  background-color: var(--color-light-dark);
+  color: var(--color-white);
+  padding: var(--spacing-3xl) 0 0;
+  margin-top: var(--spacing-3xl);
+}
+
+.footer__container {
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+/* ===== CONTENT GRID ===== */
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-3xl);
+  margin-bottom: var(--spacing-3xl);
+  padding-bottom: var(--spacing-3xl);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== SECTION ===== */
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer__title {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  margin: 0;
+  color: var(--color-white);
+}
+
+.footer__subtitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  margin: 0;
+  color: var(--color-white);
+}
+
+.footer__description {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-relaxed);
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* ===== SOCIAL LINKS ===== */
+
+.footer__social {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  font-size: 1.4rem;
+  transition: all var(--transition-base);
+}
+
+.footer__social-link:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+/* ===== LINKS LIST ===== */
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  transition: color var(--transition-base);
+}
+
+.footer__links a:hover {
+  color: var(--color-primary);
+}
+
+/* ===== CONTACT INFO ===== */
+
+.footer__contact {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.footer__contact i {
+  color: var(--color-primary);
+  width: 16px;
+  text-align: center;
+}
+
+/* ===== BOTTOM BAR ===== */
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__copyright {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.footer__bottom-links {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.footer__bottom-links a {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer__bottom-links a:hover {
+  color: var(--color-primary);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .footer__container {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .footer__bottom-links {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__container {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .footer__title {
+    font-size: var(--fs-xl);
+  }
+
+  .footer__content {
+    gap: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+  }
+}
+
+/* ===== FOCUS STATES ===== */
+
+.footer__social-link:focus-visible,
+.footer__links a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* iPhone 15 Pro & iPhone 12 Optimization (375-390px) */
+@media (max-width: 390px) {
+  .footer__container {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .footer__title {
+    font-size: var(--fs-lg);
+  }
+
+  .footer__subtitle {
+    font-size: var(--fs-md);
+  }
+
+  .footer__description {
+    font-size: 0.85rem;
+  }
+
+  .footer__social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+
+  .footer__links a {
+    font-size: 0.85rem;
+  }
+
+  .footer__contact {
+    font-size: 0.85rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .footer__bottom-links {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .footer__bottom-links a {
+    font-size: 0.8rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.8rem;
+  }
+}

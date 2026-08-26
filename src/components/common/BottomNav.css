@@ -1,0 +1,174 @@
+/* Bottom Navigation - Floating Mobile Nav */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 100%);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(25, 202, 134, 0.2);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: none;
+  opacity: 1;
+}
+
+.bottom-nav--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.bottom-nav--hidden {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bottom-nav__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  gap: 0;
+}
+
+.bottom-nav__item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.bottom-nav__item:active {
+  transform: scale(0.9);
+}
+
+.bottom-nav__item--active {
+  color: #19ca86;
+  font-weight: 600;
+}
+
+.bottom-nav__item--active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: #19ca86;
+  border-radius: 0 0 3px 3px;
+}
+
+.bottom-nav__item i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.bottom-nav__tooltip {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  animation: fadeInUp 0.2s ease;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-nav__item:active .bottom-nav__tooltip {
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Hide on desktop */
+@media (min-width: 769px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+/* Show on mobile */
+@media (max-width: 768px) {
+  .bottom-nav {
+    display: block;
+  }
+
+  body {
+    padding-bottom: 70px;
+  }
+
+  main {
+    padding-bottom: 0;
+  }
+}
+
+/* iPhone 15 Pro & iPhone 12 Optimization */
+@media (max-width: 390px) {
+  .bottom-nav {
+    height: 65px;
+  }
+
+  .bottom-nav__container {
+    height: 65px;
+    gap: 0;
+  }
+
+  .bottom-nav__item {
+    font-size: 1.2rem;
+  }
+
+  .bottom-nav__item--active::before {
+    height: 2px;
+  }
+
+  .bottom-nav__item i {
+    width: 28px;
+    height: 28px;
+  }
+
+  .bottom-nav__tooltip {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+    bottom: 65px;
+  }
+
+  body {
+    padding-bottom: 65px;
+  }
+}

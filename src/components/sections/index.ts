@@ -1,0 +1,9 @@
+export { Promotional } from './Promotional';
+export { PromoFooter } from './PromoFooter';
+export { Questions } from './Questions';
+export { Facilities } from './Facilities';
+export { Areas } from './Areas';
+export { Physiotherapy } from './Physiotherapy';
+export { PhysiotherapyComments } from './PhysiotherapyComments';
+export { Pricing } from './Pricing';
+export { Products } from './Products';
