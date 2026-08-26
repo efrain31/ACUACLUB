@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
       <div className="footer-modern__bottom">
         <div className="container">
           <p className="footer-modern__copyright">
-            © 2024 AcuaClub. Todos los derechos reservados.
+            © 2024 LAPLACE. Todos los derechos reservados.
           </p>
         </div>
       </div>
