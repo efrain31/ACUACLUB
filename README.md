@@ -96,4 +96,4 @@ src/
 
 ## 📄 Licencia
 
-© 2024 ACUACLUB. Todos los derechos reservados.
+© 2024 LAPLACE. Todos los derechos reservados.
