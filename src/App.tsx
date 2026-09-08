@@ -1,4 +1,4 @@
-import { Header, Footer, ScrollToTop, BottomNav } from '@components/common';
+import { Header, Footer, ScrollToTop, BottomNav, Watermark } from '@components/common';
 import { Promotional, PromoFooter, Questions, Facilities, Areas, Physiotherapy, PhysiotherapyComments, Pricing, Products } from '@components/sections';
 
 function App() {
@@ -279,6 +279,7 @@ function App() {
       <Footer />
       <ScrollToTop />
       <BottomNav />
+      <Watermark />
     </>
   );
 }

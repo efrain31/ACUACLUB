@@ -20,9 +20,9 @@ export const physiotherapyData = {
     }
   ],
   images: [
-    { src: '/img/16.jpg', alt: 'Sesión de fisioterapia' },
-    { src: '/img/17.jpg', alt: 'Terapia de rehabilitación' },
-    { src: '/img/18.jpg', alt: 'Ejercicios de recuperación' },
-    { src: '/img/19.jpg', alt: 'Tratamiento especializado' }
+    { src: '/img/44.jpg', alt: 'Área de entrenamiento cardiovascular' },
+    { src: '/img/45.jpg', alt: 'Máquinas de fitness modernas' },
+    { src: '/img/46.webp', alt: 'Área de entrenamiento funcional' },
+    { src: '/img/47.jpg', alt: 'Instalaciones premium del gimnasio' }
   ]
 };
